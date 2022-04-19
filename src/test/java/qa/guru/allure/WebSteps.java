@@ -19,7 +19,7 @@ public class WebSteps {
     @Step("Ищем репозиторий {repo}")
     public void searchForRepository(String repo) {
         $(".jump-to-field").click();
-        $(".jump-to-field").sendKeys(repo);
+        $(".jump-to-field").setValue(repo);
         $(".jump-to-field").pressEnter();
     }
 

@@ -26,7 +26,7 @@ public class LambdaStepTest {
         });
         step("Ищем репозиторий " + REPOSITORY, () -> {
             $(".jump-to-field").click();
-            $(".jump-to-field").sendKeys(REPOSITORY);
+            $(".jump-to-field").setValue(REPOSITORY);
             $(".jump-to-field").pressEnter();
         });
         step("Переходим по ссылке репозитория " + REPOSITORY, () -> {

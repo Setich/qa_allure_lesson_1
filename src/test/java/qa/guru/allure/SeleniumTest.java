@@ -20,7 +20,7 @@ public class SeleniumTest {
         open("https://github.com/");
 
         $(".jump-to-field").click();
-        $(".jump-to-field").sendKeys("microsoft/WSL");
+        $(".jump-to-field").setValue("microsoft/WSL");
         $(".jump-to-field").pressEnter();
 
         $(By.linkText("microsoft/WSL")).click();
